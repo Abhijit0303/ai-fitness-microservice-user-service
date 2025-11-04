@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: activity-service
+  data:
+    mongodb:
+      uri: mongodb+srv://Abhijit:Password@activity-service.ianpcfo.mongodb.net/?appName=activity-service
+      database: activity-service
+
+server:
+  port: 8082
