@@ -5,7 +5,6 @@ import com.abhijit.activityservice.dto.ActivityResponse;
 import com.abhijit.activityservice.model.Activity;
 import com.abhijit.activityservice.repository.ActivityRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
