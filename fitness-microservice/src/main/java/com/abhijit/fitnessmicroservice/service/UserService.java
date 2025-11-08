@@ -5,10 +5,12 @@ import com.abhijit.fitnessmicroservice.dto.UserResponse;
 import com.abhijit.fitnessmicroservice.model.User;
 import com.abhijit.fitnessmicroservice.repository.UserRepository;
 import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Slf4j
 public class UserService {
     @Autowired
     private UserRepository repository;
@@ -51,6 +53,7 @@ public class UserService {
     }
 
     public Boolean existByUserId(String userId) {
+        log.info("Calling User Validation API for userId: {}", userId);
         return repository.existsById(userId);
     }
 }
