@@ -1,6 +1,10 @@
 spring:
   application:
     name: ai-service
+  data:
+    mongodb:
+      uri: mongodb+srv://Abhijit:Password@activity-service.ianpcfo.mongodb.net/?appName=fitnessrecomendation
+      database: fitnessrecomendation
 
 server:
   port: 8083
